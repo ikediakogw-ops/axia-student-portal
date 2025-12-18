@@ -1,11 +1,11 @@
-/* Reset some default browser styles */
+/* ===== Reset some default browser styles ===== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* General page styling */
+/* ===== General page styling ===== */
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
@@ -14,7 +14,7 @@ body {
     padding: 20px;
 }
 
-/* Header */
+/* ===== Header ===== */
 header {
     background-color: #1f4fd8;
     color: #fff;
@@ -27,14 +27,14 @@ header h1 {
     font-size: 1.8rem;
 }
 
-/* Main content */
+/* ===== Main content ===== */
 main {
     background-color: #ffffff;
     padding: 20px;
     border-radius: 5px;
 }
 
-/* Footer */
+/* ===== Footer ===== */
 footer {
     margin-top: 20px;
     text-align: center;
@@ -42,7 +42,7 @@ footer {
     color: #666;
 }
 
-/* Dashboard layout */
+/* ===== Dashboard layout ===== */
 .container {
     display: flex;
     gap: 20px;
@@ -101,7 +101,60 @@ footer {
     font-weight: bold;
 }
 
-/* Responsive adjustments */
+/* ===== Login form styles ===== */
+/* Form container */
+main h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1f4fd8;
+}
+
+/* Form wrapper */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Labels */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Inputs */
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1f4fd8;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #173aa8;
+}
+
+/* ===== Responsive adjustments ===== */
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
@@ -109,5 +162,15 @@ footer {
 
     .sidebar {
         width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    form {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
     }
 }
