@@ -41,3 +41,73 @@ footer {
     font-size: 0.9rem;
     color: #666;
 }
+
+/* Dashboard layout */
+.container {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 200px;
+    background-color: #1f4fd8;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    margin-bottom: 15px;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+/* Main dashboard area */
+.dashboard-main {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Cards inside dashboard */
+.card-container {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1 1 200px;
+    background-color: #f4f6f8;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+}
